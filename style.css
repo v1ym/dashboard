@@ -1,5 +1,28 @@
 html, body {
   margin: auto;
   padding: 0;
+  font-family: sans-serif;
+  background: black;
+}
 
+.jumbotron {
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 50px;
+}
+
+.clock {
+  margin-top: 35%;
+  margin-left: 5%;
+  color: white;
+}
+
+#time {
+  font-size: 100px;
+}
+
+#date {
+  font-size: 50px;
 }

@@ -1,0 +1,32 @@
+function startTime () {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  var weekDay = today.getDay();
+  var monthDay = today.getDate();
+
+  var ampm = "am";
+
+
+  if (h > 12) {
+    h = h - 12;
+    ampm = "pm";
+  } else {
+    ampm = "am";
+  }
+
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById("time").innerHTML = h + " : " + m + " " + ampm;
+  document.getElementById("date").innerHTML = today.toDateString();
+  var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
