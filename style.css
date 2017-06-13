@@ -8,12 +8,9 @@ html, body {
 
 .jumbotron {
   text-align: center;
+  font-size: 2em;
 }
 
-.jumbotron h1 {
-  font-size: 50px;
-  color: white;
-}
 
 .clock {
   margin-top: 35%;
@@ -22,9 +19,9 @@ html, body {
 }
 
 #time {
-  font-size: 100px;
+  font-size: 6em;
 }
 
 #date {
-  font-size: 50px;
+  font-size: 3em;
 }

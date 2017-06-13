@@ -3,6 +3,7 @@ function startTime () {
   var h = today.getHours();
     h -=2;
 
+
   var m = today.getMinutes();
   var s = today.getSeconds();
 
@@ -11,6 +12,9 @@ function startTime () {
 
   var ampm = "am";
 
+  if (h < 0) {
+      h = h + 24
+  }
 
   if (h > 12) {
     h = h - 12;
@@ -18,6 +22,9 @@ function startTime () {
   } else {
     ampm = "am";
   }
+
+
+
 
   m = checkTime(m);
   s = checkTime(s);
