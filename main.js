@@ -12,6 +12,9 @@ function startTime () {
 
   var ampm = "am";
 
+  h -=4; //Time change for Pi dashboard
+
+//24 Time
   if (h < 1) {
       h = h + 24
   }
@@ -23,14 +26,10 @@ function startTime () {
     ampm = "am";
   }
 
-
-
-
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById("time").innerHTML = h + " : " + m + " " + ampm;
   document.getElementById("date").innerHTML = today.toDateString();
-  document.getElementById("test").innerHTML = screenWidth + " x " + screenHeight;
 
   var t = setTimeout(startTime, 500);
 }
@@ -42,13 +41,10 @@ function checkTime(i) {
   return i;
 }
 
-
-
 var sw = screen.width;
 var sh = screen.height;
 
 var screenWidth = sw.toString();
 var screenHeight = sh.toString();
-
 
 console.log(screenWidth + " x " + screenHeight);
