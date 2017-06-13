@@ -1,7 +1,7 @@
 function startTime () {
   var today = new Date();
   var h = today.getHours();
-    h -=4;
+
 
 
   var m = today.getMinutes();
@@ -12,7 +12,7 @@ function startTime () {
 
   var ampm = "am";
 
-  if (h < 0) {
+  if (h < 1) {
       h = h + 24
   }
 

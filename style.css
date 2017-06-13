@@ -18,16 +18,16 @@ html, body {
 }
 
 #time {
-  font-size: 10px;
+  font-size: 50px;
   position: absolute;
   top: 300px;
-  color: blue;
+
 
 }
 
 #date {
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
-  top: 400px;
+  top: 350px;
 
 }
