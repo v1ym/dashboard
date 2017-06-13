@@ -4,6 +4,14 @@ html, body {
   font-family: sans-serif;
   background: black;
   color: white;
+
+}
+
+.container {
+
+  margin: auto;
+  width: 95%;
+  
 }
 
 .jumbotron {
@@ -13,21 +21,20 @@ html, body {
 
 
 .clock {
-
   color: white;
+  margin-top: 400px;
+
 }
 
 #time {
   font-size: 50px;
-  position: absolute;
-  top: 300px;
+
 
 
 }
 
 #date {
   font-size: 30px;
-  position: absolute;
-  top: 350px;
+
 
 }
