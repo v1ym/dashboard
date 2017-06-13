@@ -8,20 +8,25 @@ html, body {
 
 .jumbotron {
   text-align: center;
-  font-size: 2em;
+  font-size: 40px;
 }
 
 
 .clock {
-  margin-top: 35%;
-  margin-left: 5%;
+
   color: white;
 }
 
 #time {
-  font-size: 4em;
+  font-size: 30px;
+  position: absolute;
+  top: 300px;
+
 }
 
 #date {
-  font-size: 2em;
+  font-size: 20px;
+  position: absolute;
+  top: 400px;
+
 }
