@@ -18,9 +18,10 @@ html, body {
 }
 
 #time {
-  font-size: 30px;
+  font-size: 10px;
   position: absolute;
   top: 300px;
+  color: blue;
 
 }
 
