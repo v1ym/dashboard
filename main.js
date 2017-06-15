@@ -2,8 +2,6 @@ function startTime () {
   var today = new Date();
   var h = today.getHours();
 
-
-
   var m = today.getMinutes();
   var s = today.getSeconds();
 
@@ -21,6 +19,8 @@ function startTime () {
 
   if (h > 12) {
     h = h - 12;
+  }
+  if (h>= 12) {
     ampm = "pm";
   } else {
     ampm = "am";
