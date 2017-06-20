@@ -11,13 +11,14 @@ function startTime () {
   var ampm = "am";
 
   h -=4; //Time change for Pi dashboard
-
+  console.log(h + " " + ampm);
 //24 Time
   if (h>= 12) {
     ampm = "pm";
   } else {
     ampm = "am";
   }
+  console.log(h + " " + ampm);
 
   if (h > 16) {
     h -= 12;
