@@ -20,7 +20,7 @@ function startTime () {
   if (h > 16) {
     h -= 12;
     ampm = "pm";
-  } elseif( h < 1) {
+  } else if(h < 1) {
     h += 24;
   };
 
