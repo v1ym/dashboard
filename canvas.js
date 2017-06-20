@@ -4,6 +4,7 @@ ctx.beginPath();
 ctx.lineWidth=10;
 ctx.strokeStyle="#ffffff";
 
+/*
 for (var i = 0; i <=1000; i += 50) {
   ctx.moveTo(i,0);
   ctx.lineTo(i,600);
@@ -14,5 +15,8 @@ for (var n = 0; n <= 1000; n += 50) {
   ctx.moveTo(0, n);
   ctx.lineTo(1000, n);
   ctx.stroke();
-
 }
+*/
+
+ctx.rect(0,0,575,450);
+ctx.stroke();
