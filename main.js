@@ -1,7 +1,7 @@
 function startTime () {
   var today = new Date();
 
-  //pi timezone difference
+  //pi timezone difference (4 hours behind)
   today.setTime(today - (1000*60*60*4));
 
   var h = today.getHours();
@@ -21,7 +21,9 @@ function startTime () {
   if (h > 12) {
     h-=12;
     ampm = "pm";
-  };
+  } else if (h == 12) {
+    ampm = "pm";
+  }
 
   m = checkTime(m);
   s = checkTime(s);
@@ -38,10 +40,11 @@ function checkTime(i) {
   return i;
 }
 
+//screenheight stuff
 var sw = screen.width;
 var sh = screen.height;
 
 var screenWidth = sw.toString();
 var screenHeight = sh.toString();
 
-// console.log(screenWidth + " x " + screenHeight);
+console.log(screenWidth + " x " + screenHeight);
