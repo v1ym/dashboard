@@ -1,24 +1,18 @@
 function startTime () {
   var today = new Date();
-  var h = today.getHours();
 
+  //pi timezone difference
+  today.setTime(today - (1000*60*60*4));
+
+  var h = today.getHours();
   var m = today.getMinutes();
   var s = today.getSeconds();
 
   var weekDay = today.getDay();
   var monthDay = today.getDate();
-
   var ampm = "am";
 
-  h -=4; //Time change for Pi dashboard
-  console.log(h + " " + ampm);
-  console.log("test");
 //24 Time
-
-  console.log(h + " " + ampm);
-
-
-
   if (h < 1) {
     h+= 24;
     ampm = "pm";
@@ -50,4 +44,4 @@ var sh = screen.height;
 var screenWidth = sw.toString();
 var screenHeight = sh.toString();
 
-console.log(screenWidth + " x " + screenHeight);
+// console.log(screenWidth + " x " + screenHeight);
