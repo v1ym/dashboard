@@ -21,10 +21,12 @@ function startTime () {
 
   if (h < 1) {
     h+= 24;
+    ampm = "pm";
   };
 
-  if (h > 16) {
+  if (h > 12) {
     h-=12;
+    ampm = "pm";
   };
 
   m = checkTime(m);
