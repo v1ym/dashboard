@@ -13,13 +13,18 @@ function startTime () {
   h -=4; //Time change for Pi dashboard
 
 //24 Time
-  if (h < 1) {
-      h = h + 24
+  if (h>= 12) {
+    ampm = "pm";
+  } else {
+    ampm = "am";
   }
 
   if (h > 16) {
-    h = h - 12;
+    h -= 12;
+  } elseif( h < 1) {
+    h += 24;
   }
+
   if (h>= 12) {
     ampm = "pm";
   } else {
