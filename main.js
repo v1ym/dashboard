@@ -25,12 +25,6 @@ function startTime () {
     h += 24;
   }
 
-  if (h>= 12) {
-    ampm = "pm";
-  } else {
-    ampm = "am";
-  }
-
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById("time").innerHTML = h + " : " + m + " " + ampm;
