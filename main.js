@@ -17,11 +17,14 @@ function startTime () {
 
   console.log(h + " " + ampm);
 
+
+
+  if (h < 1) {
+    h+= 24;
+  };
+
   if (h > 16) {
-    h -= 12;
-    ampm = "pm";
-  } else if(h < 1) {
-    h += 24;
+    h-=12;
   };
 
   m = checkTime(m);
