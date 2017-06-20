@@ -17,7 +17,7 @@ function startTime () {
       h = h + 24
   }
 
-  if (h > 12) {
+  if (h > 16) {
     h = h - 12;
   }
   if (h>= 12) {
