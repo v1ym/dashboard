@@ -11,9 +11,9 @@ function getWeather() {
     woeid: '',
     unit: 'c',
     success: function(weather) {
-      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
-      html += '<li class="currently">'+weather.currently+'</li>';
+      html = '<h2><i class="icon-'+weather.code+'"></i><span>'+weather.temp+'&deg;'+weather.units.temp+'</span></h2>';
+      //html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+      //html += '<li class="currently">'+weather.currently+'</li>';
       //wind info// html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
 
       $("#weather").html(html);
