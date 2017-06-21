@@ -21,6 +21,8 @@ for (var n = 0; n <= 1000; n += 50) {
 
 //pi screen border
 
-
+/*
 ctx.rect(0,0,580,450);
 ctx.stroke();
+
+*/
