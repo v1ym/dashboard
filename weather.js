@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  getWeather();
+  setInterval(getWeather, 1000 * 60 * 10);
+});
+
+
+function getWeather() {
+  console.log("updated");
   $.simpleWeather({
     location: 'Milton, On',
     woeid: '',
@@ -15,4 +22,4 @@ $(document).ready(function() {
       $("#weather").html('<p>'+error+'</p>');
     }
   });
-});
+};
