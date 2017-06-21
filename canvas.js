@@ -4,6 +4,7 @@ ctx.beginPath();
 ctx.lineWidth=10;
 ctx.strokeStyle="#ffffff";
 
+//gridlines (click to expand)
 /*
 for (var i = 0; i <=1000; i += 50) {
   ctx.moveTo(i,0);
@@ -18,5 +19,11 @@ for (var n = 0; n <= 1000; n += 50) {
 }
 */
 
+//pi screen border
+
+/*
+
 ctx.rect(0,0,575,450);
 ctx.stroke();
+
+*/

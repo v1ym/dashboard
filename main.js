@@ -12,7 +12,7 @@ function startTime () {
   var monthDay = today.getDate();
   var ampm = "am";
 
-//24 Time
+  //24 Time
   if (h < 1) {
     h+= 24;
     ampm = "pm";
@@ -29,10 +29,10 @@ function startTime () {
   s = checkTime(s);
   document.getElementById("time").innerHTML = h + " : " + m + " " + ampm;
   document.getElementById("date").innerHTML = today.toDateString();
-
   var t = setTimeout(startTime, 500);
-}
+} //end:function startTime()
 
+//ensures 2 digits for numbers under 10
 function checkTime(i) {
   if (i < 10) {
     i = "0" + i;
@@ -41,10 +41,8 @@ function checkTime(i) {
 }
 
 //screenheight stuff
-var sw = screen.width;
-var sh = screen.height;
-
-var screenWidth = sw.toString();
-var screenHeight = sh.toString();
-
-console.log(screenWidth + " x " + screenHeight);
+  var sw = screen.width;
+  var sh = screen.height;
+  var screenWidth = sw.toString();
+  var screenHeight = sh.toString();
+  console.log(screenWidth + " x " + screenHeight);
