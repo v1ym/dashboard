@@ -1,3 +1,7 @@
+* {
+  /* border: 1px solid yellow; */
+}
+
 @font-face {
   font-family: 'weather';
   src: url("./fonts/artill_clean_icons.otf");
@@ -6,10 +10,10 @@
 }
 
 html, body {
+  background: #1D2731;
   margin: auto;
   padding: 0;
   font-family: sans-serif;
-  background: black;
   color: white;
 }
 .container {
@@ -17,6 +21,10 @@ html, body {
   width: 95%;
 }
 
+
+.buffer {
+  height: 10px;
+}
 .jumbotron {
   text-align: left;
 }
@@ -38,10 +46,11 @@ i {
 }
 #weather {
   color: white;
-  width: 200px;
-  position: fixed;
-  left: 400px;
-  top: 0;
+  width: 150px;
+  position: absolute;
+  height: 60px;
+  top: 50px;
+  margin-left: 5px;
 }
 #weather h2 {
   margin: 0;
@@ -54,7 +63,6 @@ i {
   top: -8px;
   font-size: 30px;
 }
-
 #weather ul {
   list-style-type: none;
 }
@@ -62,9 +70,24 @@ i {
   display: inline;
 }
 
+.card {
+  background: #328cc1;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  top: 0px;
+  display: inline-block;
+}
+.card h2 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
 .clock {
   color: white;
-  margin-top: 300px;
+  margin-top: 155px;
+  margin-left: 313px;
 }
 #time {
   font-size: 50px;
@@ -73,57 +96,59 @@ i {
   font-size: 30px;
 }
 
+
+
+
+
 canvas {
   position: fixed;
   top: 0px;
 }
-
-
-.icon-0:before { content: ":"; }
-.icon-1:before { content: "p"; }
-.icon-2:before { content: "S"; }
-.icon-3:before { content: "Q"; }
-.icon-4:before { content: "S"; }
-.icon-5:before { content: "W"; }
-.icon-6:before { content: "W"; }
-.icon-7:before { content: "W"; }
-.icon-8:before { content: "W"; }
-.icon-9:before { content: "I"; }
-.icon-10:before { content: "W"; }
-.icon-11:before { content: "I"; }
-.icon-12:before { content: "I"; }
-.icon-13:before { content: "I"; }
-.icon-14:before { content: "I"; }
-.icon-15:before { content: "W"; }
-.icon-16:before { content: "I"; }
-.icon-17:before { content: "W"; }
-.icon-18:before { content: "U"; }
-.icon-19:before { content: "Z"; }
-.icon-20:before { content: "Z"; }
-.icon-21:before { content: "Z"; }
-.icon-22:before { content: "Z"; }
-.icon-23:before { content: "Z"; }
-.icon-24:before { content: "E"; }
-.icon-25:before { content: "E"; }
-.icon-26:before { content: "3"; }
-.icon-27:before { content: "a"; }
-.icon-28:before { content: "A"; }
-.icon-29:before { content: "a"; }
-.icon-30:before { content: "A"; }
-.icon-31:before { content: "6"; }
-.icon-32:before { content: "1"; }
-.icon-33:before { content: "6"; }
-.icon-34:before { content: "1"; }
-.icon-35:before { content: "W"; }
-.icon-36:before { content: "1"; }
-.icon-37:before { content: "S"; }
-.icon-38:before { content: "S"; }
-.icon-39:before { content: "S"; }
-.icon-40:before { content: "M"; }
-.icon-41:before { content: "W"; }
-.icon-42:before { content: "I"; }
-.icon-43:before { content: "W"; }
-.icon-44:before { content: "a"; }
-.icon-45:before { content: "S"; }
-.icon-46:before { content: "U"; }
-.icon-47:before { content: "S"; }
+  .icon-0:before { content: ":"; }
+  .icon-1:before { content: "p"; }
+  .icon-2:before { content: "S"; }
+  .icon-3:before { content: "Q"; }
+  .icon-4:before { content: "S"; }
+  .icon-5:before { content: "W"; }
+  .icon-6:before { content: "W"; }
+  .icon-7:before { content: "W"; }
+  .icon-8:before { content: "W"; }
+  .icon-9:before { content: "I"; }
+  .icon-10:before { content: "W"; }
+  .icon-11:before { content: "I"; }
+  .icon-12:before { content: "I"; }
+  .icon-13:before { content: "I"; }
+  .icon-14:before { content: "I"; }
+  .icon-15:before { content: "W"; }
+  .icon-16:before { content: "I"; }
+  .icon-17:before { content: "W"; }
+  .icon-18:before { content: "U"; }
+  .icon-19:before { content: "Z"; }
+  .icon-20:before { content: "Z"; }
+  .icon-21:before { content: "Z"; }
+  .icon-22:before { content: "Z"; }
+  .icon-23:before { content: "Z"; }
+  .icon-24:before { content: "E"; }
+  .icon-25:before { content: "E"; }
+  .icon-26:before { content: "3"; }
+  .icon-27:before { content: "a"; }
+  .icon-28:before { content: "A"; }
+  .icon-29:before { content: "a"; }
+  .icon-30:before { content: "A"; }
+  .icon-31:before { content: "6"; }
+  .icon-32:before { content: "1"; }
+  .icon-33:before { content: "6"; }
+  .icon-34:before { content: "1"; }
+  .icon-35:before { content: "W"; }
+  .icon-36:before { content: "1"; }
+  .icon-37:before { content: "S"; }
+  .icon-38:before { content: "S"; }
+  .icon-39:before { content: "S"; }
+  .icon-40:before { content: "M"; }
+  .icon-41:before { content: "W"; }
+  .icon-42:before { content: "I"; }
+  .icon-43:before { content: "W"; }
+  .icon-44:before { content: "a"; }
+  .icon-45:before { content: "S"; }
+  .icon-46:before { content: "U"; }
+  .icon-47:before { content: "S"; }

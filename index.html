@@ -10,12 +10,19 @@
 </head>
 <body onload = "startTime()">
 
+  <!-- the border -->
   <canvas id="myCanvas" width="900" height="600"></canvas>
   <script src="./canvas.js"></script>
 
+
 <div class="jumbotron">
+  <div class="buffer">
+  </div>
   <div class = "container">
-    <div id="weather"></div>
+    <div class="card"><h2>Notes...</h2></div>
+    <div class="card"><div id="weather"></div></div>
+
+  <!--   <div id="weather"></div> -->
     <script type = "text/javascript" src="./jquery.simpleWeather.js"></script>
     <script type = "text/javascript" src="./weather.js"></script>
   </div>
