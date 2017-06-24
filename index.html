@@ -19,22 +19,31 @@
   <div class="buffer">
   </div>
   <div class = "container">
-    <div class="card">
-      <h2>Notes...</h2>
-      <ul>
-        <li>I love Natalie.</li>
-      </ul>
+    <div class="row">
+      <div class="card">
+        <h2>Notes...</h2>
+        <ul>
+          <li>I love Natalie.</li>
+        </ul>
+      </div>
+      <div class="card"><div id="weather"></div></div>
 
-
+    <!--   <div id="weather"></div> -->
+      <script type = "text/javascript" src="./jquery.simpleWeather.js"></script>
+      <script type = "text/javascript" src="./weather.js"></script>
     </div>
-    <div class="card"><div id="weather"></div></div>
+    <div class="row">
+      <div class="card" id="garbageCard">
+        <h3>This week</h3>
+        <img src="./recycling.png" width="30px"/>
+        <img src="./trashcan.png" width="30px"/>
+        <img src="./grass.png" width="30px"/>
+      </div>
+    </div>
 
-  <!--   <div id="weather"></div> -->
-    <script type = "text/javascript" src="./jquery.simpleWeather.js"></script>
-    <script type = "text/javascript" src="./weather.js"></script>
+
   </div>
 </div>
-
 
 <div class = "container">
   <div class = "clock">

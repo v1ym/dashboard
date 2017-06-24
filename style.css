@@ -10,7 +10,7 @@
 }
 
 html, body {
-  background: #1D2731;
+  background: black;
   margin: auto;
   padding: 0;
   font-family: sans-serif;
@@ -73,7 +73,7 @@ i {
 }
 
 .card {
-  background: #328cc1;
+  background: #465c8b;
   width: 150px;
   height: 150px;
   margin: 10px;
@@ -85,6 +85,10 @@ i {
   padding: 0;
   position: absolute;
 }
+.card h3 {
+  margin: 5px;
+  padding: 0;
+}
 .card ul {
   list-style-type: none;
   position: absolute;
@@ -93,14 +97,11 @@ i {
   margin: 20px 0 0;
   position: relative;
   left: -30px;
-
-
-
 }
 
 .clock {
-  color: white;
-  margin-top: 155px;
+  color: #DFDCE3;
+  margin-top: 40px;
   margin-left: 280px;
 }
 #time {
@@ -110,7 +111,15 @@ i {
   font-size: 30px;
 }
 
-
+#garbageCard {
+  background: #F7EF6A;
+  color: black;
+  height: 75px;
+  text-align: center;
+}
+#garbageCard img {
+  margin: 2px 5px;
+}
 
 
 
