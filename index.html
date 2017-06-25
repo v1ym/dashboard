@@ -5,8 +5,8 @@
   <link rel="stylesheet" type="text/css" href="./style.css"/>
   <script type = "text/javascript" src="./main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <!-- reload the page every 5 seconds
-    <meta http-equiv="refresh" content="10"/> -->
+    <!-- reload the page every 5 seconds -->
+    <meta http-equiv="refresh" content="600"/>
 </head>
 <body onload = "startTime()">
 
@@ -20,25 +20,31 @@
   </div>
   <div class = "container">
     <div class="row">
-      <div class="card">
-        <h2>Notes...</h2>
+      <div class="card" id="toDoCard">
+        <h2>To Do...</h2>
         <ul>
-          <li>I love Natalie.</li>
+          <li>- Corolla oil change</li>
+          <li>- Plants for planter</li>
         </ul>
       </div>
-      <div class="card"><div id="weather"></div></div>
-
-    <!--   <div id="weather"></div> -->
-      <script type = "text/javascript" src="./jquery.simpleWeather.js"></script>
-      <script type = "text/javascript" src="./weather.js"></script>
+      <div class="card" id="weatherCard"><div id="weather"></div></div>
+        <!--   <div id="weather"></div> -->
+        <script type = "text/javascript" src="./jquery.simpleWeather.js"></script>
+        <script type = "text/javascript" src="./weather.js"></script>
+        <div class="card" id="garbageCard">
+          <h3>This week</h3>
+          <img src="./recycling.png" width="30px"/>
+          <img src="./trashcan.png" width="30px"/>
+          <img src="./grass.png" width="30px"/>
+        </div>
     </div>
     <div class="row">
-      <div class="card" id="garbageCard">
+        <!-- <div class="card" id="garbageCard">
         <h3>This week</h3>
         <img src="./recycling.png" width="30px"/>
         <img src="./trashcan.png" width="30px"/>
         <img src="./grass.png" width="30px"/>
-      </div>
+      </div>-->
     </div>
 
 

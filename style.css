@@ -1,7 +1,6 @@
 * {
 
 }
-
 @font-face {
   font-family: 'weather';
   src: url("./fonts/artill_clean_icons.otf");
@@ -19,9 +18,8 @@ html, body {
 .container {
   margin: auto;
   width: 95%;
+  vertical-align: top;
 }
-
-
 .buffer {
   height: 10px;
 }
@@ -31,7 +29,6 @@ html, body {
 .jumbotron h1 {
   font-size: 20px;
 }
-
 
 i {
   color: #fff;
@@ -51,8 +48,8 @@ i {
   width: 150px;
   position: absolute;
   height: 60px;
-  top: 50px;
-  margin-left: 5px;
+  top: 28px;
+  margin-left: 10px;
 }
 #weather h2 {
   margin: 0;
@@ -70,6 +67,13 @@ i {
 }
 #weather li {
   display: inline;
+}
+#weatherCard {
+  height: 75px;
+  vertical-align: top;
+}
+#toDoCard {
+  height: 175px;
 }
 
 .card {
@@ -94,10 +98,14 @@ i {
   position: absolute;
 }
 .card li {
-  margin: 20px 0 0;
+  margin: 0;
   position: relative;
   left: -30px;
 }
+.card li:first-of-type {
+  margin-top: 20px;
+}
+
 
 .clock {
   color: #DFDCE3;
@@ -116,6 +124,9 @@ i {
   color: black;
   height: 75px;
   text-align: center;
+  position: relative;
+  left: -175px;
+  top: -20px;
 }
 #garbageCard img {
   margin: 2px 5px;

@@ -1,8 +1,8 @@
 function startTime () {
   var today = new Date();
 
-  //pi timezone difference (4 hours behind)
-  today.setTime(today - (1000*60*60*4));
+  //pi timezone difference (4 hours behind)(15 seconds behind)
+  today.setTime(today - (1000*60*60*4)-(1000*15));
 
   var h = today.getHours();
   var m = today.getMinutes();
