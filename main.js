@@ -13,19 +13,18 @@ function startTime () {
   var ampm = "am";
 
   //24 Time
-  if (h == 0) {
+  if (h == 12) {
+    ampm = "pm";
+  }
+  else if (h == 0) {
     h+=12;
   } else if (h < 0) {
     h+= 24;
     ampm = "pm";
-  };
-
-  if (h > 12) {
+  } else if (h > 12) {
     h-=12;
     ampm = "pm";
-  } /*else if (h == 12) {
-    ampm = "pm";
-  } */
+  }
 
   m = checkTime(m);
   s = checkTime(s);
